@@ -16,7 +16,7 @@ header h1{
     font-size: 30px;
 }
 main{
-    min-height: 81vh;
+    min-height: 40vh;
     padding: 30px;
     margin: 0 auto;
     max-height: 880px;
