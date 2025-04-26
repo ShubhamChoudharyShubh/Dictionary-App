@@ -1,9 +1,9 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+body {
     font-family: cursive;
     background-color: blanchedalmond;
     display: flex;
@@ -11,16 +11,7 @@ body{
     align-items: center;
     height: 100vh; /* Full viewport height */
 }
-header{
-    background-color: black;
-    color: white;
-    padding: 15px;
-    text-align: center; /* Centers header text */
-}
-header h1{
-    font-size: 30px;
-}
-main{
+main {
     width: 500px; /* Fixed width for square shape */
     height: 500px; /* Fixed height for square shape */
     background-color: white;
@@ -29,53 +20,61 @@ main{
     border-radius: 20px; /* Smooth corners */
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centers content vertically */
+    justify-content: space-between; /* Space between header, form, and footer */
     align-items: center; /* Centers content horizontally */
     padding: 20px;
 }
-.result{
+header {
     width: 100%;
+    background-color: black;
+    color: white;
     padding: 15px;
-    margin-top: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 5px black;
-    color: black;
+    text-align: center; /* Centers header text */
+    border-radius: 10px; /* Smooth corners for header */
 }
-.result p{
-    margin-top: 20px;
+header h1 {
+    font-size: 25px;
 }
-.result li{
-    padding: 3px;
-    margin-left: 20px;
-    margin-bottom: 10px;
-}
-main form{
-    width: 100%; /* Full width inside the square */
+form {
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
-form input[type="text"], button[type="submit"]{
-  padding: 10px;
-  font-size: 16px;
-  border: none;
-  border-radius: 10px;
-  margin: 5px;
-  flex-grow: 1; /* Makes input grow */
+form input[type="text"], button[type="submit"] {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    margin: 5px;
+    flex-grow: 1; /* Makes input grow */
 }
-button{
+form input[type="text"] {
+    margin-right: 5px;
+}
+button {
     background-color: black;
     color: white;
     cursor: pointer;
     flex-grow: 0; /* Prevents button from stretching */
 }
-button:hover{
+button:hover {
     background-color: rgba(0, 0, 0, 0.756);
 }
-footer{
+.result {
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 5px black;
+    border-radius: 10px;
+    color: black;
+}
+footer {
+    width: 100%;
     background-color: black;
     color: white;
     padding: 10px;
     font-size: 15px;
     text-align: center;
-    width: 100%;
+    border-radius: 10px; /* Smooth corners for footer */
 }
