@@ -34,6 +34,103 @@ header {
 }
 header h1 {
     font-size: 25px;
+    padding: 5px; /* Adds space around the header text */
+    border: 2px solid black; /* Adds a black border to the header text */
+    border-radius: 5px; /* Smooth corners for header text */
+    background-color: blanchedalmond; /* Contrasting background */
+    color: black; /* Black text for better readability */
+}
+form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+form input[type="text"] {
+    padding: 12px; /* Adds spacing inside the input */
+    font-size: 16px; /* Increases font size for better readability */
+    border: 2px solid black; /* Black border for emphasis */
+    border-radius: 8px; /* Smooth corners */
+    background-color: white; /* Clean white background */
+    margin-right: 5px; /* Adds spacing between input and button */
+    flex-grow: 1;
+}
+
+form button[type="submit"] {
+    padding: 12px; /* Adds padding for a better look */
+    font-size: 16px; /* Uniform text size */
+    border: none; /* Removes default border */
+    border-radius: 8px; /* Smooth corners */
+    background-color: #007BFF; /* Adds a modern blue color */
+    color: white; /* White text on button */
+    cursor: pointer; /* Pointer cursor for hover effect */
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+form button[type="submit"]:hover {
+    background-color: #0056b3; /* Slightly darker blue on hover */
+}
+.result {
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 5px black;
+    border-radius: 10px;
+    color: black;
+}
+footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 10px; /* Smooth corners for footer */
+}
+
+footer p {
+    padding: 8px; /* Adds spacing around the footer text */
+    border: 2px solid black; /* Black border for footer text */
+    border-radius: 5px; /* Smooth corners for footer text */
+    background-color: blanchedalmond; /* Contrasting background for footer text */
+    color: black; /* Black text for better readability */
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: cursive;
+    background-color: blanchedalmond;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+main {
+    width: 500px; /* Fixed width for square shape */
+    height: 500px; /* Fixed height for square shape */
+    background-color: white;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5); /* Shadow effect */
+    border: 5px solid yellow; /* Yellow border */
+    border-radius: 20px; /* Smooth corners */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space between header, form, and footer */
+    align-items: center; /* Centers content horizontally */
+    padding: 20px;
+}
+header {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    text-align: center; /* Centers header text */
+    border-radius: 10px; /* Smooth corners for header */
+}
+header h1 {
+    font-size: 25px;
 }
 form {
     width: 100%;
