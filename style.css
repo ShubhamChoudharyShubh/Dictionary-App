@@ -6,58 +6,67 @@
 body{
     font-family: cursive;
     background-color: blanchedalmond;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
 }
 header{
     background-color: black;
     color: white;
     padding: 15px;
+    text-align: center; /* Centers header text */
 }
 header h1{
     font-size: 30px;
 }
 main{
-    min-height: 40vh;
-    padding: 30px;
-    margin: 0 auto;
-    max-height: 880px;
-}
-.result{
+    width: 500px; /* Fixed width for square shape */
+    height: 500px; /* Fixed height for square shape */
     background-color: white;
-    color: black;
-    border-radius: 20px;
-    margin-top: 20px;
-    box-shadow: 0px 0px 5px black;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5); /* Shadow effect */
+    border: 5px solid yellow; /* Yellow border */
+    border-radius: 20px; /* Smooth corners */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
     padding: 20px;
 }
-.result p{
-    margin-top: 20px
+.result{
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px black;
+    color: black;
 }
-
+.result p{
+    margin-top: 20px;
+}
 .result li{
     padding: 3px;
     margin-left: 20px;
     margin-bottom: 10px;
 }
 main form{
+    width: 100%; /* Full width inside the square */
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 form input[type="text"], button[type="submit"]{
-  padding: 15px;
-  font-weight: 50px;
- font-size: 16px;
- border: none;
- border-radius: 10px;
- margin: 5px;
- 
-}
-form input[type="text"]{
-    flex-grow: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  margin: 5px;
+  flex-grow: 1; /* Makes input grow */
 }
 button{
     background-color: black;
     color: white;
     cursor: pointer;
+    flex-grow: 0; /* Prevents button from stretching */
 }
 button:hover{
     background-color: rgba(0, 0, 0, 0.756);
@@ -65,9 +74,8 @@ button:hover{
 footer{
     background-color: black;
     color: white;
-    padding: 20px;
+    padding: 10px;
     font-size: 15px;
     text-align: center;
-    position: fixed;
     width: 100%;
 }
