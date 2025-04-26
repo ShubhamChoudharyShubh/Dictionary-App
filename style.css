@@ -5,7 +5,7 @@
 }
 body {
     font-family: cursive;
-    background-color: blanchedalmond;
+    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,9 +14,9 @@ body {
 main {
     width: 500px; /* Fixed width for square shape */
     height: 500px; /* Fixed height for square shape */
-    background-color: white;
+    background-color: yellow;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5); /* Shadow effect */
-    border: 5px solid yellow; /* Yellow border */
+    border: 2px solid yellow; /* Yellow border */
     border-radius: 20px; /* Smooth corners */
     display: flex;
     flex-direction: column;
@@ -48,7 +48,7 @@ form {
 form input[type="text"] {
     padding: 12px; /* Adds spacing inside the input */
     font-size: 16px; /* Increases font size for better readability */
-    border: 2px solid black; /* Black border for emphasis */
+    border: 2px solid black !importent; /* Black border for emphasis */
     border-radius: 8px; /* Smooth corners */
     background-color: white; /* Clean white background */
     margin-right: 5px; /* Adds spacing between input and button */
@@ -60,7 +60,7 @@ form button[type="submit"] {
     font-size: 16px; /* Uniform text size */
     border: none; /* Removes default border */
     border-radius: 8px; /* Smooth corners */
-    background-color: #007BFF; /* Adds a modern blue color */
+    background-color: black; /* Adds a modern blue color */
     color: white; /* White text on button */
     cursor: pointer; /* Pointer cursor for hover effect */
     transition: background-color 0.3s ease; /* Smooth hover transition */
